@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/item_popular"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/idimgviewpopular"
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            android:src="@drawable/burger" />
+
+        <TextView
+            android:id="@+id/txttitlepopular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idimgviewpopular"
+            android:layout_centerHorizontal="true"
+            android:text="@string/app_name"
+            android:textColor="@color/black" />
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txttitlepopular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/idtxtmoney"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="$0.0"
+                android:layout_below="@+id/idimgviewpopular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/idimgcong"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/plus_circle"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
